@@ -64,9 +64,10 @@
 
 }
 
-main {
-    margin: 50px auto;
-    width: 900px;
+.div_html {
+    margin: 50px auto 0px 0px;
+    width: 500px;
+    zoom: 0.4;
 }
 
 .HuaBu {

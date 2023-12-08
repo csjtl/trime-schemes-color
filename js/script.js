@@ -3,6 +3,16 @@
 
 // Tested in Chrome 95
 
+// 高度计算zoom
+var div_html = document.querySelector(".div_html");
+var percentage, appWidth = 768; //设置默认屏幕大小
+percentage = window.innerWidth * 100 / appWidth;
+//console.log("window.innerWidth = " + window.innerWidth);
+percentage = Math.floor(percentage) / 200;
+//console.log("Math.floor(percentage) = " + Math.floor(percentage));
+//console.log("percentage = " + percentage);
+div_html.style.setProperty("zoom", percentage);
+
 function showNoSupport() {
   const $message = document.querySelector(".info");
   $message.innerHTML = "😢 Your browser does not support the EyeDropper API.";
@@ -20,7 +30,7 @@ function btnKeyboardBackColor() {
   );
 
   function showResult(hex = "0xffFFFFFF") {
-    console.log(hex);
+    //console.log(hex);
     //$info.innerText = hex;
     $pppppppp.style.background = hex;
     root.style.setProperty("--color0", hex);
@@ -52,7 +62,7 @@ function btnTextBackColor() {
   const $xxxxxxxxxx = document.querySelector(".btn_text_back_color_hex_info");
 
   function showResult(hex = "0xffFFFFFF") {
-    console.log(hex);
+    //console.log(hex);
     //$info.innerText = hex;
     $pppppppp.style.background = hex;
     root.style.setProperty("--color1_1", hex);
@@ -115,7 +125,7 @@ function btnTextColor() {
   const $xxxxxxxxxx = document.querySelector(".btn_text_color_hex_info");
 
   function showResult(hex = "0xffFFFFFF") {
-    console.log(hex);
+    //console.log(hex);
     //$info.innerText = hex;
     $pppppppp.style.background = hex;
     root.style.setProperty("--color1_3", hex);
@@ -147,7 +157,7 @@ function btnLabelColor() {
   const $xxxxxxxxxx = document.querySelector(".btn_label_color_hex_info");
 
   function showResult(hex = "0xffFFFFFF") {
-    console.log(hex);
+    //console.log(hex);
     //$info.innerText = hex;
     $pppppppp.style.background = hex;
     root.style.setProperty("--color1_4", hex);
@@ -184,7 +194,7 @@ function btnHilitedBackColor() {
   );
 
   function showResult(hex = "0xffFFFFFF") {
-    console.log(hex);
+    //console.log(hex);
     //$info.innerText = hex;
     $pppppppp.style.background = hex;
     root.style.setProperty("--color1_5", hex);
@@ -220,7 +230,7 @@ function btnHilitedTextColor() {
   );
 
   function showResult(hex = "0xffFFFFFF") {
-    console.log(hex);
+    //console.log(hex);
     //$info.innerText = hex;
     $pppppppp.style.background = hex;
     root.style.setProperty("--color1_6", hex);
@@ -256,7 +266,7 @@ function btnHilitedCandidateBackColor() {
   );
 
   function showResult(hex = "0xffFFFFFF") {
-    console.log(hex);
+    //console.log(hex);
     //$info.innerText = hex;
     $pppppppp.style.background = hex;
     root.style.setProperty("--color1_7", hex);
@@ -292,7 +302,7 @@ function btnHilitedCandidateTextColor() {
   );
 
   function showResult(hex = "0xffFFFFFF") {
-    console.log(hex);
+    //console.log(hex);
     //$info.innerText = hex;
     $pppppppp.style.background = hex;
     root.style.setProperty("--color1_8", hex);
@@ -328,7 +338,7 @@ function btnHilitedCommentTextColor() {
   );
 
   function showResult(hex = "0xffFFFFFF") {
-    console.log(hex);
+    //console.log(hex);
     //$info.innerText = hex;
     $pppppppp.style.background = hex;
     root.style.setProperty("--color1_9", hex);
@@ -364,7 +374,7 @@ function btnCandidateSeparatorColor() {
   );
 
   function showResult(hex = "0xffFFFFFF") {
-    console.log(hex);
+    //console.log(hex);
     //$info.innerText = hex;
     $pppppppp.style.background = hex;
     root.style.setProperty("--color2_1", hex);
@@ -400,7 +410,7 @@ function btnCandidateTextColor() {
   );
 
   function showResult(hex = "0xffFFFFFF") {
-    console.log(hex);
+    //console.log(hex);
     //$info.innerText = hex;
     $pppppppp.style.background = hex;
     root.style.setProperty("--color2_2", hex);
@@ -437,7 +447,7 @@ function btnCommentTextColor() {
   );
 
   function showResult(hex = "0xffFFFFFF") {
-    console.log(hex);
+    //console.log(hex);
     //$info.innerText = hex;
     $pppppppp.style.background = hex;
     root.style.setProperty("--color2_3", hex);
@@ -470,7 +480,7 @@ function btnKeyBackColor() {
   const $xxxxxxxxxx = document.querySelector(".btn_key_back_color_hex_info");
 
   function showResult(hex = "0xffFFFFFF") {
-    console.log(hex);
+    //console.log(hex);
     //$info.innerText = hex;
     $pppppppp.style.background = hex;
     root.style.setProperty("--color3_1", hex);
@@ -503,7 +513,7 @@ function btnKeyTextColor() {
   const $xxxxxxxxxx = document.querySelector(".btn_key_text_color_hex_info");
 
   function showResult(hex = "0xffFFFFFF") {
-    console.log(hex);
+    //console.log(hex);
     //$info.innerText = hex;
     $pppppppp.style.background = hex;
     root.style.setProperty("--color3_2", hex);
@@ -536,7 +546,7 @@ function btnKeySymbolColor() {
   const $xxxxxxxxxx = document.querySelector(".btn_key_symbol_color_hex_info");
 
   function showResult(hex = "0xffFFFFFF") {
-    console.log(hex);
+    //console.log(hex);
     //$info.innerText = hex;
     $pppppppp.style.background = hex;
     root.style.setProperty("--color3_3", hex);
@@ -573,7 +583,7 @@ function btnHilitedKeyBackColor() {
   );
 
   function showResult(hex = "0xffFFFFFF") {
-    console.log(hex);
+    //console.log(hex);
     //$info.innerText = hex;
     $pppppppp.style.background = hex;
     root.style.setProperty("--color4_1", hex);
@@ -609,7 +619,7 @@ function btnHilitedKeyTextColor() {
   );
 
   function showResult(hex = "0xffFFFFFF") {
-    console.log(hex);
+    //console.log(hex);
     //$info.innerText = hex;
     $pppppppp.style.background = hex;
     root.style.setProperty("--color4_2", hex);
@@ -645,7 +655,7 @@ function btnHilitedKeySymbolColor() {
   );
 
   function showResult(hex = "0xffFFFFFF") {
-    console.log(hex);
+    //console.log(hex);
     //$info.innerText = hex;
     $pppppppp.style.background = hex;
     root.style.setProperty("--color4_3", hex);
@@ -681,7 +691,7 @@ function btnPreviewBackColor() {
   );
 
   function showResult(hex = "0xffFFFFFF") {
-    console.log(hex);
+    //console.log(hex);
     //$info.innerText = hex;
     $pppppppp.style.background = hex;
     root.style.setProperty("--color5_1", hex);
@@ -717,7 +727,7 @@ function btnPreviewTextColor() {
   );
 
   function showResult(hex = "0xffFFFFFF") {
-    console.log(hex);
+    //console.log(hex);
     //$info.innerText = hex;
     $pppppppp.style.background = hex;
     root.style.setProperty("--color5_2", hex);
@@ -749,7 +759,7 @@ function btnBenter() {
   const $xxxxxxxxxx = document.querySelector(".btn_benter_hex_info");
 
   function showResult(hex = "0xffFFFFFF") {
-    console.log(hex);
+    //console.log(hex);
     //$info.innerText = hex;
     $pppppppp.style.background = hex;
     root.style.setProperty("--color6_1", hex);
@@ -781,7 +791,7 @@ function btnTenter() {
   const $xxxxxxxxxx = document.querySelector(".btn_tenter_hex_info");
 
   function showResult(hex = "0xffFFFFFF") {
-    console.log(hex);
+    //console.log(hex);
     //$info.innerText = hex;
     $pppppppp.style.background = hex;
     root.style.setProperty("--color6_2", hex);
@@ -813,7 +823,7 @@ function btnBgn() {
   const $xxxxxxxxxx = document.querySelector(".btn_bgn_hex_info");
 
   function showResult(hex = "0xffFFFFFF") {
-    console.log(hex);
+    //console.log(hex);
     //$info.innerText = hex;
     $pppppppp.style.background = hex;
     root.style.setProperty("--color6_3", hex);
@@ -845,7 +855,7 @@ function btnTgn() {
   const $xxxxxxxxxx = document.querySelector(".btn_tgn_hex_info");
 
   function showResult(hex = "0xffFFFFFF") {
-    console.log(hex);
+    //console.log(hex);
     //$info.innerText = hex;
     $pppppppp.style.background = hex;
     root.style.setProperty("--color6_4", hex);
@@ -877,7 +887,7 @@ function btnBbs() {
   const $xxxxxxxxxx = document.querySelector(".btn_bbs_hex_info");
 
   function showResult(hex = "0xffFFFFFF") {
-    console.log(hex);
+    //console.log(hex);
     //$info.innerText = hex;
     $pppppppp.style.background = hex;
     root.style.setProperty("--color6_5", hex);
@@ -909,7 +919,7 @@ function btnTbs() {
   const $xxxxxxxxxx = document.querySelector(".btn_tbs_hex_info");
 
   function showResult(hex = "0xffFFFFFF") {
-    console.log(hex);
+    //console.log(hex);
     //$info.innerText = hex;
     $pppppppp.style.background = hex;
     root.style.setProperty("--color6_6", hex);
